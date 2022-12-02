@@ -2,7 +2,7 @@ const arrayTech = ['React', 'Jest', 'HTML', 'CSS', 'JavaScript'];
 const techList = (array, stryng) => {
   let techObject = [];
 
-  if (array.length >= 5) {
+  if (array.length === 5) {
     array = array.sort();
   }
 
