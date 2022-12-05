@@ -7,9 +7,6 @@
 const hydrate = (frase) => {
   let number = /\d+/g;
   let value = frase.match(number);
-  console.log(value);
-  //let numeroInteiro = parseInt(value);
-  //console.log(numeroInteiro);
   let result = 0;
   for (let index = 0; index < value.length; index += 1) {
     result += parseInt(value[index]);
