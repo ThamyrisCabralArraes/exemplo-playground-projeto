@@ -19,9 +19,9 @@ const maioresQueTres = (valor) => {
 };
 
 const generatePhoneNumber = (number) => {
-  let pNumber = '(__) _____-____';
+  let replaceNumber = '(__) _____-____';
   for (let numbers of number) {
-    pNumber = pNumber.replace('_', numbers);
+    replaceNumber = replaceNumber.replace('_', numbers);
   }
 
   if (number.length !== 11) {
@@ -37,7 +37,7 @@ const generatePhoneNumber = (number) => {
   if (maioresQueTres(number)) {
     return `não é possível gerar um número de telefone com esses valores`;
   } else {
-    return pNumber;
+    return replaceNumber;
   }
 };
 
