@@ -19,7 +19,7 @@ const maioresQueTres = (valor) => {
 };
 
 const generatePhoneNumber = (number) => {
-  let pNumber = '(__) ____-____';
+  let pNumber = '(__) _____-____';
   for (let numbers of number) {
     pNumber = pNumber.replace('_', numbers);
   }
